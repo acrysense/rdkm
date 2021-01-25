@@ -105,12 +105,18 @@
                                     <div class="card__promo"><span>63 000,00</span> ₽</div>
                                 </div>
                                 <div class="card__bottom">
-                                    <div class="card__inner">
-                                        <p class="card__period">
-                                            <span class="card__period--title">Период:</span>
-                                            <span class="card__period--value">год</span>
-                                        </p>
-                                        <p class="card__interest"><span>100</span> %</p>
+                                    <div class="progress progress--card">
+                                        <progress max="100" value="100"></progress>
+                                        <div class="progress__bg">
+                                            <div class="progress__bar"></div>
+                                        </div>
+                                        <div class="card__inner progress__wrapper">
+                                            <p class="card__period">
+                                                <span class="card__period--title">Период:</span>
+                                                <span class="card__period--value">год</span>
+                                            </p>
+                                            <p class="card__interest progress__value"></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,12 +133,18 @@
                                     <div class="card__promo"><span>1 500,00</span> ₽</div>
                                 </div>
                                 <div class="card__bottom">
-                                    <div class="card__inner">
-                                        <p class="card__period">
-                                            <span class="card__period--title">Период:</span>
-                                            <span class="card__period--value">месяц</span>
-                                        </p>
-                                        <p class="card__interest"><span>0</span> %</p>
+                                    <div class="progress progress--card">
+                                        <progress max="100" value="0"></progress>
+                                        <div class="progress__bg">
+                                            <div class="progress__bar"></div>
+                                        </div>
+                                        <div class="card__inner progress__wrapper">
+                                            <p class="card__period">
+                                                <span class="card__period--title">Период:</span>
+                                                <span class="card__period--value">месяц</span>
+                                            </p>
+                                            <p class="card__interest progress__value"></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -188,12 +200,18 @@
                                     <div class="card__promo"><span>0,00</span> ₽</div>
                                 </div>
                                 <div class="card__bottom">
-                                    <div class="card__inner">
-                                        <p class="card__period">
-                                            <span class="card__period--title">Период:</span>
-                                            <span class="card__period--value">месяц</span>
-                                        </p>
-                                        <p class="card__interest"><span>0</span> %</p>
+                                    <div class="progress progress--card">
+                                        <progress max="100" value="0"></progress>
+                                        <div class="progress__bg">
+                                            <div class="progress__bar"></div>
+                                        </div>
+                                        <div class="card__inner progress__wrapper">
+                                            <p class="card__period">
+                                                <span class="card__period--title">Период:</span>
+                                                <span class="card__period--value">месяц</span>
+                                            </p>
+                                            <p class="card__interest progress__value"></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -210,12 +228,18 @@
                                     <div class="card__promo"><span>2 350,00</span> ₽</div>
                                 </div>
                                 <div class="card__bottom">
-                                    <div class="card__inner">
-                                        <p class="card__period">
-                                            <span class="card__period--title">Период:</span>
-                                            <span class="card__period--value">месяц</span>
-                                        </p>
-                                        <p class="card__interest"><span>0</span> %</p>
+                                    <div class="progress progress--card">
+                                        <progress max="100" value="0"></progress>
+                                        <div class="progress__bg">
+                                            <div class="progress__bar"></div>
+                                        </div>
+                                        <div class="card__inner progress__wrapper">
+                                            <p class="card__period">
+                                                <span class="card__period--title">Период:</span>
+                                                <span class="card__period--value">месяц</span>
+                                            </p>
+                                            <p class="card__interest progress__value"></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -232,12 +256,18 @@
                                     <div class="card__promo"><span>500,00</span> ₽</div>
                                 </div>
                                 <div class="card__bottom">
-                                    <div class="card__inner">
-                                        <p class="card__period">
-                                            <span class="card__period--title">Период:</span>
-                                            <span class="card__period--value">месяц</span>
-                                        </p>
-                                        <p class="card__interest"><span>0</span> %</p>
+                                    <div class="progress progress--card">
+                                        <progress max="100" value="0"></progress>
+                                        <div class="progress__bg">
+                                            <div class="progress__bar"></div>
+                                        </div>
+                                        <div class="card__inner progress__wrapper">
+                                            <p class="card__period">
+                                                <span class="card__period--title">Период:</span>
+                                                <span class="card__period--value">месяц</span>
+                                            </p>
+                                            <p class="card__interest progress__value"></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -261,8 +291,9 @@
                                     class="upload-file__input"
                                     accept=".jpg, .jpeg, .png"
                                     oninput="onFileSelected(event)"
+                                    multiple
                                 >
-                                <label class="upload-file__label" for="upload-file__upload">=
+                                <label class="upload-file__label" for="upload-file__upload">
                                     <div class="upload-file__icon">
                                         <img src="img/dist/sprite.svg#upload-file" alt="">
                                     </div>
@@ -271,7 +302,16 @@
                                     </div>
                                 </label>
                             </div>
-                            <div class="card__text">Объём хранилища</div>
+                            <div class="progress progress--volume volume">
+                                <progress max="8" value="4"></progress>
+                                <div class="progress__bg">
+                                    <div class="progress__bar"></div>
+                                </div>
+                                <div class="progress__wrapper progress__wrapper--flex">
+                                    <div class="progress__title">Объём хранилища</div>
+                                    <div class="progress__value"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -332,53 +372,53 @@
                             <div class="voting">
                                 <div class="voting__item">
                                     <div class="voting__title">Поход в музей Природы и человека</div>
-                                    <div class="progress">
+                                    <div class="progress progress--voting">
                                         <progress max="100" value="27"></progress>
                                         <div class="progress__bg">
                                             <div class="progress__bar"></div>
                                         </div>
-                                        <div class="voting__rate">
+                                        <div class="voting__rate progress__wrapper">
                                             <div class="voting__vote">6 голосов</div>
-                                            <div class="voting__interest"></div>
+                                            <div class="voting__interest progress__value"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="voting__item">
                                     <div class="voting__title">Поход в музей Природы и человека</div>
-                                    <div class="progress">
+                                    <div class="progress progress--voting">
                                         <progress max="100" value="52"></progress>
                                         <div class="progress__bg">
                                             <div class="progress__bar"></div>
                                         </div>
-                                        <div class="voting__rate">
+                                        <div class="voting__rate progress__wrapper">
                                             <div class="voting__vote">18 голосов</div>
-                                            <div class="voting__interest"></div>
+                                            <div class="voting__interest progress__value"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="voting__item">
                                     <div class="voting__title">Поход в музей Природы и человека</div>
-                                    <div class="progress">
+                                    <div class="progress progress--voting">
                                         <progress max="100" value="27"></progress>
                                         <div class="progress__bg">
                                             <div class="progress__bar"></div>
                                         </div>
-                                        <div class="voting__rate">
+                                        <div class="voting__rate progress__wrapper">
                                             <div class="voting__vote">6 голосов</div>
-                                            <div class="voting__interest"></div>
+                                            <div class="voting__interest progress__value"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="voting__item">
                                     <div class="voting__title">Поход в музей Природы и человека</div>
-                                    <div class="progress">
+                                    <div class="progress progress--voting">
                                         <progress max="100" value="27"></progress>
                                         <div class="progress__bg">
                                             <div class="progress__bar"></div>
                                         </div>
-                                        <div class="voting__rate">
+                                        <div class="voting__rate progress__wrapper">
                                             <div class="voting__vote">6 голосов</div>
-                                            <div class="voting__interest"></div>
+                                            <div class="voting__interest progress__value"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -398,6 +438,105 @@
     </div>
     <!-- End of content -->
     <!-- Scripts -->
+    <script>
+        // UPLOAD FILES
+        let uploadFileInput = document.getElementById('upload-file__upload')
+        let uploadIcon = document.querySelector('.upload-file__icon')
+        let uploadImg = document.querySelector('.upload-file__img')
+
+        // UPLOAD FILE AND CROP IMG
+        function onFileSelected(event) {
+            let selectedFile = event.target.files[0];
+            let reader = new FileReader();
+
+            reader.readAsDataURL(selectedFile);
+        }
+
+        for (let i = 1; i <= 4; i++) { 
+            window['uploadDragFiles_'+i] = new Object();
+        }
+
+        document.querySelectorAll('.upload-file').forEach((current_item, index) => {
+            const inputFile = current_item.querySelector('.upload-file__input');
+
+            // ARRAY FILES
+            let fileList = [];
+
+            // UPLOAD IMAGE BTN
+            let textSelector = current_item.querySelector('.upload-file__btn');
+
+            // FILE SELECTION EVENT
+            inputFile.addEventListener('change', () => {
+                fileList.push(...inputFile.files);
+
+                fileList.forEach(file => {
+                    uploadFile(file);
+                });
+            });
+
+            // FILE SIZE CHECK
+            const uploadFile = (file) => {
+                if (file.size > 2 * 1024 * 1024) {
+                    alert('File size no more than 2MB');
+                    return;
+                }
+
+                // SHOW UPLOADED FILES
+                textSelector.textContent = file.name;
+                fileList = [];
+            }
+
+            // DRAG-AND-DROP
+            const dropZone = current_item.querySelector('.upload-file__label');
+            const dropZoneText = current_item.querySelector('.upload-file__btn');
+            const maxFileSize = 2000000; // MAX SIZE: 2MB
+
+            // SUPPORT CHECK
+            if (typeof (window.FileReader) == 'undefined') {
+                dropZone.textContent = 'Drag-and-Drop not supported';
+                dropZone.classList.add('upload-file__label--error'); // ERROR CHECK
+            }
+
+            // EVENT - DRAG-AND-DROP
+            dropZone.ondragover = function () {
+                this.classList.add('upload-file__label--hover');
+                return false;
+            };
+
+            // EVENT - CANCELING DRAG-AND-DROP
+            dropZone.ondragleave = function () {
+                this.classList.remove('upload-file__label--hover');
+                return false;
+            };
+
+            // EVENT - SUCCESS DRAG-AND-DROP
+            dropZone.addEventListener('drop', function (e) {
+                e.preventDefault();
+                this.classList.remove('upload-file__label--hover');
+                this.classList.add('upload-file__label--drop');
+
+                uploadDragFiles = e.dataTransfer.files[0];
+
+                // FILE SIZE CHECK
+                if (uploadDragFiles.size > maxFileSize) {
+                    dropZoneText.textContent = 'File size no more than 2MB';
+                    this.addClass('upload-file__label--error');
+                    return false;
+                }
+
+                // SHOW UPLOADED FILES
+                dropZoneText.textContent = e.dataTransfer.files[0].name;
+
+                let selectedFile = e.dataTransfer.files[0];
+                let reader = new FileReader();
+
+                reader.readAsDataURL(selectedFile);
+
+                window['uploadDragFiles_'+index] = uploadDragFiles;
+            });
+
+        });
+    </script>
     <script src="js/app.min.js"></script>
 </body>
 </html>
