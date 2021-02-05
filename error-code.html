@@ -28,12 +28,18 @@
                 <h4 class="auth-form__title">Введите код</h4>
                 <p class="auth-form__help">Код выслан на номер <span id="send-to-number">+7 915 156 78 90</span></p>
                 <div class="auth-form__group">
-                    <div class="auth-form__inner">
-                        <div class="input-group input-group--flex">
-                            <input type="number" class="auth-form__input auth-form__input--num input">
-                            <input type="number" class="auth-form__input auth-form__input--num input">
-                            <input type="number" class="auth-form__input auth-form__input--num input">
-                            <input type="number" class="auth-form__input auth-form__input--num input">
+                    <div class="auth-form__inner auth-form__inner--flex">
+                        <div class="input-group input-group--num">
+                            <input type="number" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                        </div>
+                        <div class="input-group input-group--num">
+                            <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                        </div>
+                        <div class="input-group input-group--num">
+                            <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                        </div>
+                        <div class="input-group input-group--num">
+                            <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
                         </div>
                     </div>
                 </div>
@@ -46,6 +52,26 @@
     </div>
     <!-- End of content -->
     <!-- Scripts -->
+    <script>
+        function maxLengthCheck(object) {
+            if (object.value.length > object.max.length) {
+                object.value = object.value.slice(0, object.max.length)
+            }
+        }
+          
+        function isNumeric (evt) {
+            let theEvent = evt || window.event;
+            let key = theEvent.keyCode || theEvent.which;
+            key = String.fromCharCode (key);
+            let regex = /[0-9]|\./;
+            if (!regex.test(key)) {
+                theEvent.returnValue = false;
+                if (theEvent.preventDefault) {
+                    theEvent.preventDefault();
+                }
+            }
+        }
+    </script>
     <script src="js/vendor.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
