@@ -122,6 +122,37 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="personal-data__data">
+                                    <div class="personal-data__data-group">
+                                        <input type="text" class="personal-data__input input" id="personal-surname" value="Шиншилкина" placeholder=" ">
+                                        <label for="personal-surname" class="personal-data__label">Фамилия</label>
+                                    </div>
+                                    <div class="personal-data__data-group">
+                                        <input type="text" class="personal-data__input input" id="personal-name" value="Сюзанна" placeholder=" ">
+                                        <label for="personal-name" class="personal-data__label">Имя</label>
+                                    </div>
+                                    <div class="personal-data__data-group">
+                                        <input type="text" class="personal-data__input input" id="personal-patronymic" value="Альбертовна" placeholder=" ">
+                                        <label for="personal-patronymic" class="personal-data__label">Отчество</label>
+                                    </div>
+                                    <div class="personal-data__data-group">
+                                        <input type="text" class="personal-data__input input" id="personal-dob" value="31.02.2021" placeholder=" ">
+                                        <label for="personal-dob" class="personal-data__label">Дата рождения</label>
+                                    </div>
+                                    <div class="personal-data__data-group">
+                                        <input type="email" class="personal-data__input input" id="personal-email" value="test@mail.com" placeholder=" ">
+                                        <label for="personal-email" class="personal-data__label">Email</label>
+                                    </div>
+                                    <div class="personal-data__data-group">
+                                        <input type="tle" class="personal-data__input input" id="personal-phone" value="+7 912 345 67 89" placeholder=" ">
+                                        <label for="personal-phone" class="personal-data__label">Телефон</label>
+                                    </div>
+                                    <div class="personal-data__data-group">
+                                        <input type="password" class="personal-data__input input" id="personal-name" value="123456789" placeholder=" ">
+                                        <label for="personal-name" class="personal-data__label">Пароль</label>
+                                    </div>
+                                    <button class="personal-data__btn btn" disabled>Сохранить изменения</button>
+                                </div>
                             </div>
                             <div class="personal-data__content">
                                 <div class="related-users">
@@ -202,7 +233,7 @@
                                         </span>
                                     </label>
                                     <label for="notifications-radio2" class="small-checkbox">
-                                        <input type="radio" class="small-checkbox__input" name="notifications-radio" id="notifications-radio2">
+                                        <input type="radio" class="small-checkbox__input" name="notifications-radio" id="notifications-radio2" checked>
                                         <span class="small-checkbox__group">
                                             <span class="small-checkbox__checked">
                                                 <svg width="8" height="8" viewBox="0 0 12 13" xmlns="http://www.w3.org/2000/svg">
@@ -278,8 +309,8 @@
                                 </div>
                                 <h4 class="personal-data__title">Подключенные сервисы</h4>
                                 <div class="personal-data__inner">
-                                    <label for="yandex-passport" class="custom-checkbox custom-checkbox--yandex">
-                                        <input type="radio" class="custom-checkbox__input" id="yandex-passport" disabled>
+                                    <label for="yandex-passport" class="custom-checkbox custom-checkbox--yandex custom-checkbox--success">
+                                        <input type="checkbox" class="custom-checkbox__input" id="yandex-passport" disabled>
                                         <span class="custom-checkbox__group">
                                             <span class="custom-checkbox__icon">Я</span>
                                             <span class="custom-checkbox__content">
@@ -302,7 +333,7 @@
                                         </span>
                                     </label>
                                     <label for="public-services" class="custom-checkbox custom-checkbox--yandex">
-                                        <input type="radio" class="custom-checkbox__input" id="public-services" disabled>
+                                        <input type="checkbox" class="custom-checkbox__input" id="public-services" disabled>
                                         <span class="custom-checkbox__group">
                                             <span class="custom-checkbox__icon">Г</span>
                                             <span class="custom-checkbox__content">
@@ -361,7 +392,7 @@
                                 <p class="plan__description">Действует до 11.02.2021</p>
                                 <a href="" class="plan__link">Отключить автоплатеж</a>
                             </div>
-                            <div class="plan__item">
+                            <div class="plan__item plan__item--accent">
                                 <h4 class="plan__title">Продвинутый</h4>
                                 <p class="plan__description">Забудьте об оплате на весь год</p>
                                 <div class="plan__info">
