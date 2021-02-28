@@ -12,8 +12,10 @@
     <!-- Content -->
     <div class="content">
         <aside class="sidebar sidebar--img">
-            <div class="sidebar__title">
-                <h1>Родительский комитет<span>.</span></h1>
+            <div class="sidebar__group">
+                <div class="sidebar__title">
+                    <h1>Родительский <br>комитет<span>.</span></h1>
+                </div>
             </div>
         </aside>
         <main class="main main--auth">
@@ -25,27 +27,29 @@
                 </div>
             </div>
             <form action="" class="auth-form">
-                <h4 class="auth-form__title">Введите код</h4>
-                <p class="auth-form__help">Код выслан на номер <span id="send-to-number">+7 915 156 78 90</span></p>
-                <div class="auth-form__group">
-                    <div class="auth-form__inner auth-form__inner--flex">
-                        <div class="input-group input-group--num">
-                            <input type="number" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
-                        </div>
-                        <div class="input-group input-group--num">
-                            <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
-                        </div>
-                        <div class="input-group input-group--num">
-                            <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
-                        </div>
-                        <div class="input-group input-group--num">
-                            <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                <div class="auth-form__wrapper auth-form__wrapper--active">
+                    <h4 class="auth-form__title">Введите код</h4>
+                    <p class="auth-form__help">Код выслан на номер <span id="send-to-number">+7 915 156 78 90</span></p>
+                    <div class="auth-form__group">
+                        <div class="auth-form__inner auth-form__inner--flex">
+                            <div class="input-group input-group--num">
+                                <input type="number" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                            </div>
+                            <div class="input-group input-group--num">
+                                <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                            </div>
+                            <div class="input-group input-group--num">
+                                <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                            </div>
+                            <div class="input-group input-group--num">
+                                <input type="text" class="auth-form__input auth-form__input--num input" onkeypress="return isNumeric(event)" oninput="maxLengthCheck(this)" min="9" max="9">
+                            </div>
                         </div>
                     </div>
+                    <p class="auth-form__help">Повторная отправка 00:59</p>
+                    <button class="auth-form__btn btn" disabled>Получить повторно</button>
+                    <p class="auth-form__help auth-form__help--inline">Войти по <a href="login.html">паролю</a></p>
                 </div>
-                <p class="auth-form__help">Повторная отправка 00:59</p>
-                <button class="auth-form__btn btn" disabled>Получить повторно</button>
-                <p class="auth-form__help auth-form__help--inline">Войти по <a href="login.html">паролю</a></p>
             </form>
             <p class="main__copyright">© 2021 «Родительский комитет». Используя этот сайт, Вы выражаете согласие на сбор и обработку Ваших персональных данных, в том числе с привлечением сторонних сервисов, с применением cookie-файлов и средств анализа поведения пользователей, согласно нашей Политике о персональных данных. Вы принимаете условия нашего Пользовательского соглашения.</p>
         </main>
