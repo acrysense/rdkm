@@ -90,7 +90,7 @@
                             <button class="tabs__button">Список голосований</button>
                         </li>
                     </ul>
-                    <div class="tabs__content tabs__content--active">
+                    <div class="tabs__content tabs__content--no-indentation tabs__content--active">
                         <div class="tabs__wrapper">
                             <div class="tabs__inner tabs__inner--flex">
                                 <div class="stage">
@@ -492,7 +492,7 @@
                                     </div>
                                 </div>
                                 <div class="list__list">
-                                    <div class="list__item">
+                                    <div class="list__item open-panel">
                                         <label for="id-checkbox100" class="square-checkbox">
                                             <input type="checkbox" class="square-checkbox__input" id="id-checkbox100">
                                             <span class="square-checkbox__group">
@@ -526,7 +526,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="list__item">
+                                    <div class="list__item open-panel">
                                         <label for="id-checkbox101" class="square-checkbox">
                                             <input type="checkbox" class="square-checkbox__input" id="id-checkbox101">
                                             <span class="square-checkbox__group">
@@ -560,7 +560,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="list__item">
+                                    <div class="list__item open-panel">
                                         <label for="id-checkbox102" class="square-checkbox">
                                             <input type="checkbox" class="square-checkbox__input" id="id-checkbox102">
                                             <span class="square-checkbox__group">
@@ -594,7 +594,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="list__item">
+                                    <div class="list__item open-panel">
                                         <label for="id-checkbox104" class="square-checkbox">
                                             <input type="checkbox" class="square-checkbox__input" id="id-checkbox104">
                                             <span class="square-checkbox__group">
@@ -633,6 +633,191 @@
                         </div>
                     </div>
                 </div>
+                <div class="side-panel">
+                    <div class="side-panel__buttons">
+                        <button class="side-panel__back">
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.79706 13.6588L8.65884 7.79706C9.11372 7.33981 9.11372 6.60126 8.65884 6.14402L2.79706 0.282231C2.35861 -0.0940775 1.71029 -0.0940775 1.27184 0.282231C0.780601 0.703118 0.723193 1.44403 1.14408 1.93527L6.17343 6.96468L1.14402 12.0058C0.689138 12.463 0.689138 13.2016 1.14402 13.6588C1.60126 14.1137 2.33987 14.1137 2.79706 13.6588Z" fill="#D5DAEA"/>
+                            </svg>
+                        </button>
+                        <button class="side-panel__close">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip123)">
+                                <path d="M13.9598 5.05028L10.0001 9.01002L6.04028 5.05019C5.76712 4.77703 5.32356 4.77703 5.0503 5.05028C4.77714 5.32345 4.77714 5.76701 5.0503 6.04017L9.01013 10L5.0503 13.9598C4.77714 14.233 4.77714 14.6766 5.0503 14.9497C5.32356 15.223 5.76712 15.223 6.04028 14.9498L10.0001 10.99L13.9598 14.9497C14.2331 15.223 14.6767 15.223 14.9498 14.9498C15.2231 14.6766 15.2231 14.233 14.9498 13.9597L10.9901 10L14.9498 6.04026C15.2231 5.767 15.2231 5.32345 14.9498 5.05019C14.6767 4.77703 14.2331 4.77703 13.9598 5.05028Z" fill="#D5DAEA"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip123">
+                                <rect width="14" height="14" fill="white" transform="translate(0.100586 10) rotate(-45)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                    <!--<div class="side-panel__wrapper">
+                        <span class="side-panel__status">Неактивное</span>
+                        <div class="side-panel__data-panel">
+                            <span class="side-panel__data">11.02.2021</span>
+                            <span class="side-panel__data">16.02.2021</span>
+                        </div>
+                        <h4 class="side-panel__title">Куда идем на 23 февраля?</h4>
+                        <div class="voting">
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="27"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">6 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="52"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">18 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="27"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">6 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="27"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">6 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="side-panel__btn btn">Возобновить голосование</button>
+                    </div>-->
+                    <div class="side-panel__wrapper">
+                        <span class="side-panel__status side-panel__status--success">Активное</span>
+                        <div class="side-panel__data-panel">
+                            <span class="side-panel__data">11.02.2021</span>
+                        </div>
+                        <h4 class="side-panel__title">Куда идем на 23 февраля?</h4>
+                        <div class="voting">
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="27"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">6 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="52"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">18 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="27"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">6 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="voting__item">
+                                <div class="voting__title">Поход в музей Природы и человека</div>
+                                <div class="progress progress--voting">
+                                    <progress max="100" value="27"></progress>
+                                    <div class="progress__bg">
+                                        <div class="progress__bar"></div>
+                                    </div>
+                                    <div class="voting__rate progress__wrapper">
+                                        <div class="voting__vote">6 голосов</div>
+                                        <div class="voting__interest progress__value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="side-panel__btn btn edit-panel">Редактировать</button>
+                    </div>
+                    <div class="side-panel__wrapper side-panel__wrapper--edit">
+                        <span class="side-panel__status side-panel__status--success">Активное</span>
+                        <div class="side-panel__data-panel">
+                            <span class="side-panel__data">11.02.2021</span>
+                        </div>
+                        <h4 class="side-panel__title">Куда идем на 23 февраля?</h4>
+                        <label for="type-vote1" class="option-checkbox">
+                            <input type="radio" class="option-checkbox__input" name="type-vote" id="type-vote1">
+                            <span class="option-checkbox__group">
+                                <span class="option-checkbox__option">A</span>
+                                <span class="option-checkbox__title">Поход в музей Природы и человека</span>
+                            </span>
+                        </label>
+                        <label for="type-vote2" class="option-checkbox">
+                            <input type="radio" class="option-checkbox__input" name="type-vote" id="type-vote2">
+                            <span class="option-checkbox__group">
+                                <span class="option-checkbox__option">Б</span>
+                                <span class="option-checkbox__title">Поход в музей Породы и чебурека</span>
+                            </span>
+                        </label>
+                        <label for="type-vote3" class="option-checkbox">
+                            <input type="radio" class="option-checkbox__input" name="type-vote" id="type-vote3">
+                            <span class="option-checkbox__group">
+                                <span class="option-checkbox__option">В</span>
+                                <span class="option-checkbox__title">Поход в музей Заботы и табурета</span>
+                            </span>
+                        </label>
+                        <label for="type-vote4" class="option-checkbox">
+                            <input type="radio" class="option-checkbox__input" name="type-vote" id="type-vote4">
+                            <span class="option-checkbox__group">
+                                <span class="option-checkbox__option">Г</span>
+                                <span class="option-checkbox__title">Поход в музей Зевоты и Бекмамбета</span>
+                            </span>
+                        </label>
+                        <button class="side-panel__btn btn">+Добавить вариант</button>
+                        <button class="side-panel__btn btn">Сохранить</button>
+                        <button class="side-panel__btn btn">Удалить</button>
+                    </div>
+                </div>
+                <div class="side-panel-overlay"></div>
             </div>
         </main>
     </div>

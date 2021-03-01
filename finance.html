@@ -81,11 +81,11 @@
                 </div>
             </div>
             <div class="main__body">
-                <div class="tabs">
+                <div class="tabs tabs--full">
                     <div class="tabs__content tabs__content--active">
                         <div class="list">
                             <div class="list__panel">
-                                <button class="list__btn btn">+ Создать операцию</button>
+                                <button class="list__btn btn open-panel">+ Создать операцию</button>
                             </div>
                             <div class="list__wrapper">
                                 <div class="list__top">
@@ -226,6 +226,200 @@
                         </div>
                     </div>
                 </div>
+                <div class="side-panel">
+                    <div class="side-panel__buttons">
+                        <button class="side-panel__back">
+                            <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.79706 13.6588L8.65884 7.79706C9.11372 7.33981 9.11372 6.60126 8.65884 6.14402L2.79706 0.282231C2.35861 -0.0940775 1.71029 -0.0940775 1.27184 0.282231C0.780601 0.703118 0.723193 1.44403 1.14408 1.93527L6.17343 6.96468L1.14402 12.0058C0.689138 12.463 0.689138 13.2016 1.14402 13.6588C1.60126 14.1137 2.33987 14.1137 2.79706 13.6588Z" fill="#D5DAEA"/>
+                            </svg>
+                        </button>
+                        <button class="side-panel__close">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip123)">
+                                <path d="M13.9598 5.05028L10.0001 9.01002L6.04028 5.05019C5.76712 4.77703 5.32356 4.77703 5.0503 5.05028C4.77714 5.32345 4.77714 5.76701 5.0503 6.04017L9.01013 10L5.0503 13.9598C4.77714 14.233 4.77714 14.6766 5.0503 14.9497C5.32356 15.223 5.76712 15.223 6.04028 14.9498L10.0001 10.99L13.9598 14.9497C14.2331 15.223 14.6767 15.223 14.9498 14.9498C15.2231 14.6766 15.2231 14.233 14.9498 13.9597L10.9901 10L14.9498 6.04026C15.2231 5.767 15.2231 5.32345 14.9498 5.05019C14.6767 4.77703 14.2331 4.77703 13.9598 5.05028Z" fill="#D5DAEA"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip123">
+                                <rect width="14" height="14" fill="white" transform="translate(0.100586 10) rotate(-45)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="side-panel__wrapper">
+                        <select class="side-panel__select select" disabled>
+                            <option value="1" selected disabled>Расход</option>
+                        </select>
+                        <select class="side-panel__select select" disabled>
+                            <option value="1" selected disabled>Назначение</option>
+                        </select>
+                        <div class="input-group side-panel__input">
+                            <input type="text" class="input-group__input input" value="17.02.2021" placeholder="Дата" disabled>
+                            <span class="input-group__help" style="background-image: url(img/dist/sprite.svg#icon-data);"></span>
+                        </div>
+                        <div class="input-group side-panel__input">
+                            <input type="text" class="input-group__input input input--currency" value="15000 ₽" placeholder="Сумма" disabled>
+                            <span class="input-group__help" style="background-image: url(img/dist/sprite.svg#icon-card);"></span>
+                        </div>
+                        <div class="input-group side-panel__input">
+                            <input type="text" class="input-group__input input" value="Без комментария" placeholder="Комментарий..." disabled>
+                        </div>
+                        <h4 class="side-panel__subtitle">Участники операции</h4>
+                        <ul class="side-panel__list">
+                            <li class="side-panel__item">
+                                <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                <span class="side-panel__name">Игорь Тихонов</span>
+                            </li>
+                            <li class="side-panel__item">
+                                <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                <span class="side-panel__name">Игорь Тихонов</span>
+                            </li>
+                            <li class="side-panel__item">
+                                <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                <span class="side-panel__name">Игорь Тихонов</span>
+                            </li>
+                            <li class="side-panel__item">
+                                <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                <span class="side-panel__name">Игорь Тихонов</span>
+                            </li>
+                        </ul>
+                        <div class="upload-file upload-file--sm">
+                            <input
+                                type="file"
+                                name="files[]"
+                                id="upload-file__upload"
+                                class="upload-file__input"
+                                accept=".jpg, .jpeg, .png"
+                                oninput="onFileSelected(event)"
+                                multiple
+                            >
+                            <label class="upload-file__label" for="upload-file__upload">
+                                <div class="upload-file__icon">
+                                    <svg width="18" height="18" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip-upload)">
+                                        <path d="M29.5 0.496765H3.5C1.84312 0.496765 0.5 1.83989 0.5 3.49677V29.4968C0.5 31.1536 1.84312 32.4968 3.5 32.4968H29.5C31.1569 32.4968 32.5 31.1536 32.5 29.4968V3.49677C32.5 1.83989 31.1569 0.496765 29.5 0.496765ZM30.5 29.4968C30.5 30.0491 30.0523 30.4968 29.5 30.4968H3.5C2.94769 30.4968 2.5 30.0491 2.5 29.4968V3.49677C2.5 2.94445 2.94769 2.49677 3.5 2.49677H29.5C30.0523 2.49677 30.5 2.94445 30.5 3.49677V29.4968Z" fill="#AAB1C6"/>
+                                        <path d="M22.21 17.7868C21.8199 17.399 21.1901 17.399 20.8 17.7868L18.5 20.0868L14.21 15.7968C13.8199 15.409 13.1901 15.409 12.8 15.7968L5.79999 22.7968C5.41337 23.1911 5.41956 23.8243 5.81393 24.2109C5.99737 24.3908 6.24306 24.4931 6.49999 24.4968H26.5C27.0522 24.5 27.5026 24.0549 27.5058 23.5026C27.5074 23.2339 27.4007 22.976 27.21 22.7868L22.21 17.7868Z" fill="#AAB1C6"/>
+                                        <path d="M19.5 14.4968C21.1569 14.4968 22.5 13.1536 22.5 11.4968C22.5 9.83991 21.1569 8.49677 19.5 8.49677C17.8431 8.49677 16.5 9.83991 16.5 11.4968C16.5 13.1536 17.8431 14.4968 19.5 14.4968Z" fill="#AAB1C6"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip-upload">
+                                        <rect width="32" height="32" fill="white" transform="translate(0.5 0.496765)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="upload-file__text">
+                                    <span class="upload-file__btn">Прикрепить чек</span>
+                                </div>
+                            </label>
+                        </div>
+                        <button class="side-panel__btn btn edit-panel">Редактировать</button>
+                    </div>
+                    <div class="side-panel__wrapper side-panel__wrapper--edit">
+                        <select class="side-panel__select side-panel__select--red select">
+                            <option value="1" selected disabled>Расход</option>
+                        </select>
+                        <select class="side-panel__select select">
+                            <option value="1" selected disabled>Назначение</option>
+                        </select>
+                        <div class="input-group side-panel__input">
+                            <input type="text" class="input-group__input input" value="17.02.2021" placeholder="Дата">
+                            <span class="input-group__help" style="background-image: url(img/dist/sprite.svg#icon-data);"></span>
+                        </div>
+                        <div class="input-group side-panel__input">
+                            <input type="text" class="input-group__input input input--currency" value="15000 ₽" placeholder="Сумма">
+                            <span class="input-group__help" style="background-image: url(img/dist/sprite.svg#icon-card);"></span>
+                        </div>
+                        <div class="input-group side-panel__input">
+                            <input type="text" class="input-group__input input" placeholder="Комментарий...">
+                        </div>
+                        <h4 class="side-panel__subtitle">Участники операции</h4>
+                        <ul class="side-panel__list">
+                            <li class="side-panel__item">
+                                <label for="parent-checkbox-all" class="big-square-checkbox">
+                                    <input type="checkbox" class="big-square-checkbox__input" id="parent-checkbox-all">
+                                    <span class="big-square-checkbox__group">
+                                        <span class="big-square-checkbox__icon"></span>
+                                        <span class="big-square-checkbox__label">Все родители</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="side-panel__item">
+                                <label for="parent-checkbox1" class="big-square-checkbox">
+                                    <input type="checkbox" class="big-square-checkbox__input" id="parent-checkbox1">
+                                    <span class="big-square-checkbox__group">
+                                        <span class="big-square-checkbox__icon"></span>
+                                        <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                        <span class="big-square-checkbox__label">Игорь Тихонов</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="side-panel__item">
+                                <label for="parent-checkbox2" class="big-square-checkbox">
+                                    <input type="checkbox" class="big-square-checkbox__input" id="parent-checkbox2">
+                                    <span class="big-square-checkbox__group">
+                                        <span class="big-square-checkbox__icon"></span>
+                                        <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                        <span class="big-square-checkbox__label">Игорь Тихонов</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="side-panel__item">
+                                <label for="parent-checkbox3" class="big-square-checkbox">
+                                    <input type="checkbox" class="big-square-checkbox__input" id="parent-checkbox3">
+                                    <span class="big-square-checkbox__group">
+                                        <span class="big-square-checkbox__icon"></span>
+                                        <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                        <span class="big-square-checkbox__label">Игорь Тихонов</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class="side-panel__item">
+                                <label for="parent-checkbox4" class="big-square-checkbox">
+                                    <input type="checkbox" class="big-square-checkbox__input" id="parent-checkbox4">
+                                    <span class="big-square-checkbox__group">
+                                        <span class="big-square-checkbox__icon"></span>
+                                        <img src="img/dist/personal-ava.png" alt="Игорь Тихонов" class="side-panel__ava">
+                                        <span class="big-square-checkbox__label">Игорь Тихонов</span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="upload-file upload-file--sm">
+                            <input
+                                type="file"
+                                name="files[]"
+                                id="upload-file__upload"
+                                class="upload-file__input"
+                                accept=".jpg, .jpeg, .png"
+                                oninput="onFileSelected(event)"
+                                multiple
+                            >
+                            <label class="upload-file__label" for="upload-file__upload">
+                                <div class="upload-file__icon">
+                                    <svg width="18" height="18" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip-upload)">
+                                        <path d="M29.5 0.496765H3.5C1.84312 0.496765 0.5 1.83989 0.5 3.49677V29.4968C0.5 31.1536 1.84312 32.4968 3.5 32.4968H29.5C31.1569 32.4968 32.5 31.1536 32.5 29.4968V3.49677C32.5 1.83989 31.1569 0.496765 29.5 0.496765ZM30.5 29.4968C30.5 30.0491 30.0523 30.4968 29.5 30.4968H3.5C2.94769 30.4968 2.5 30.0491 2.5 29.4968V3.49677C2.5 2.94445 2.94769 2.49677 3.5 2.49677H29.5C30.0523 2.49677 30.5 2.94445 30.5 3.49677V29.4968Z" fill="#AAB1C6"/>
+                                        <path d="M22.21 17.7868C21.8199 17.399 21.1901 17.399 20.8 17.7868L18.5 20.0868L14.21 15.7968C13.8199 15.409 13.1901 15.409 12.8 15.7968L5.79999 22.7968C5.41337 23.1911 5.41956 23.8243 5.81393 24.2109C5.99737 24.3908 6.24306 24.4931 6.49999 24.4968H26.5C27.0522 24.5 27.5026 24.0549 27.5058 23.5026C27.5074 23.2339 27.4007 22.976 27.21 22.7868L22.21 17.7868Z" fill="#AAB1C6"/>
+                                        <path d="M19.5 14.4968C21.1569 14.4968 22.5 13.1536 22.5 11.4968C22.5 9.83991 21.1569 8.49677 19.5 8.49677C17.8431 8.49677 16.5 9.83991 16.5 11.4968C16.5 13.1536 17.8431 14.4968 19.5 14.4968Z" fill="#AAB1C6"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip-upload">
+                                        <rect width="32" height="32" fill="white" transform="translate(0.5 0.496765)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="upload-file__text">
+                                    <span class="upload-file__btn">Прикрепить чек</span>
+                                </div>
+                            </label>
+                        </div>
+                        <button class="side-panel__btn btn">Сохранить</button>
+                        <button class="side-panel__btn btn">Удалить</button>
+                    </div>
+                </div>
+                <div class="side-panel-overlay"></div>
             </div>
         </main>
     </div>
